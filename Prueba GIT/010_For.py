@@ -1,12 +1,15 @@
+# ** AQUÍ HE AÑADIDO UN PRINT AL PRINCIPIO **
 
+print("BIENVENIDA")
 
 #	El bucle for
 
 #   Ejecuta el print dos veces
 
 for i in [1,10]:		
-	print("Hola")
+	print("Hola caraculo")
 
+# COMENTARIO DE PRUEBA
 
 #   Imprime el contenido del diccionario
 

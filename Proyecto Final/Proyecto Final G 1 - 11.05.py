@@ -97,28 +97,30 @@ def main():
         print("5. Salir")
 
         try:
-            opcion = int(input("Ingrese una opción: "))
+            opcion = int(input("Ingresa una opción: "))
         except ValueError:
-            print("Opción no válida. Ingrese un número entero.")
+            print("Opción no válida. Ingresa un número entero.")
             continue
 
         if opcion == 1:
-            descripcion = input("Ingrese la descripción de la tarea: ")
+            descripcion = input("Ingresa la descripción de la tarea: ")
             gestor_tareas.agregar_tarea(descripcion)
         elif opcion == 2:
-            posicion = int(input("Ingrese la posición de la tarea a completar: "))
+            posicion = int(input("Ingresa la posición de la tarea a completar: "))
             gestor_tareas.marcar_completada(posicion)
         elif opcion == 3:
             gestor_tareas.mostrar_tareas()
         elif opcion == 4:
-            posicion = int(input("Ingrese la posición de la tarea a eliminar: "))
+            posicion = int(input("Ingresa la posición de la tarea a eliminar: "))
             gestor_tareas.eliminar_tarea(posicion)
         elif opcion == 5:
-            print("Saliendo del gestor de tareas...")
+            print("¡Muchas gracias por usar este maravilloso gestor de tareas!")
             break
         else:
-            print("Opción no válida. Intente nuevamente.")
+            print("Opción no válida. Intenta otra vez.")
 
+main()
 
-if __name__ == "__main__":
-    main()
+# BUENA PRÁCTICA PARA EVITAR LA EJECUCIÓN DE CÓDIGO NO DESEADO
+    # if __name__ == "__main__":
+    #    main()
